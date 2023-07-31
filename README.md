@@ -1,4 +1,5 @@
 # PivotFramework
-This is a simple PHP framework with a secure login and error handling. <br>
-The codebase is entirely object oriented and is implemented using vanilla JavaScript and plain old CSS. <b>
-Named pivot for it's versatility. 
+This is a simple Content Management System framework with secure authentication (login & registration) and error handling. <br>
+Tech Stack: PHP, Vanilla JavaScript, CSS. <b>
+Both php and js are written object oriented NOT procedural.
+Database implemented using active record ORM pattern.  

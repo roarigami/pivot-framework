@@ -6,10 +6,14 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ComposerAutoloaderInit0f903ae7cf2ee651a50e271a7817ccb2' => $vendorDir . '/composer/autoload_real.php',
+    'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
+    'Composer\\Autoload\\ComposerStaticInit0f903ae7cf2ee651a50e271a7817ccb2' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'GenFrame\\Database\\Migrations\\PostsTable' => $baseDir . '/SourceFiles/Root/Database/Migrations/PostsTable.php',
     'Pivot\\Database\\Migrations\\UsersTable' => $baseDir . '/SourceFiles/Root/Database/Migrations/UsersTable.php',
     'Pivot\\src\\core\\Database' => $baseDir . '/SourceFiles/Pivot/src/core/database.php',
+    'Pivot\\src\\core\\Router' => $baseDir . '/SourceFiles/Pivot/src/core/router.php',
     'Pivot\\src\\core\\Template' => $baseDir . '/SourceFiles/Pivot/src/core/template.php',
     'Root\\Database\\Connection' => $baseDir . '/SourceFiles/Root/Database/Connection.php',
     'Root\\Database\\Database' => $baseDir . '/SourceFiles/Root/Database/Database.php',

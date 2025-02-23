@@ -1,15 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php  require VIEW_PATH .  "includes/Header/head.php"; ?>
 
-<?php
-require VIEW_PATH .  "includes/Header/head.php";
-
-require VIEW_PATH .  "includes/Navigation/navigation.php";
-?>
+<body>
+<?php require VIEW_PATH .  "includes/Navigation/navigation.php"; ?>
 
 <div class="page-content">
   <h1 class="page-title">Home</h1>
 </div>
 
 
-<?php
-require VIEW_PATH .  "includes/Footer/footer.php";
-?>
+<?php require VIEW_PATH .  "includes/Footer/footer.php"; ?>
+
+
+</body>
+</html>

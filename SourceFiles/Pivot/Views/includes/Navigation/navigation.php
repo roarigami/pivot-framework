@@ -11,7 +11,7 @@
         </a>
         <ul>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#">Shop</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <!-- Signup or Login button with an icon inside it -->

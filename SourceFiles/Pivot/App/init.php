@@ -6,3 +6,6 @@ include "bootstrap.php";
 
 //Manually Set timezone
 date_default_timezone_set('America/Toronto');
+
+
+require VIEW_PATH . 'home.php';

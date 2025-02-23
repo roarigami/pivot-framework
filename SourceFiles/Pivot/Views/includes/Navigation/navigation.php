@@ -1,11 +1,14 @@
 
-<nav class="MainPivotNavigation">
+<nav class="PivotMainNavigation">
 
     <div class="pivot-container">
 
         <!-- Navigation links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar" style="width:100%;">
-        <a href="">Pivot Framework</a>
+        <a href="" class="nav-brand">
+          <img src="/ABSOLUTE/Frameworks/PivotFramework/SourceFiles/Pivot/UI/assets/img/pivotlogo.png"/>
+          Pivot Framework
+        </a>
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>

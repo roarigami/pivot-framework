@@ -1,5 +1,5 @@
 <?php
-//use Root\Database\{Database};
+use Root\Database\{Database};
 
 //Pivot System Initiation
 include "bootstrap.php";

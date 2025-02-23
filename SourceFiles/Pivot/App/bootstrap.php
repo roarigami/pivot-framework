@@ -6,4 +6,4 @@ define('MODULE_PATH', ROOT_PATH . 'Pivot' . DIRECTORY_SEPARATOR . 'Module' . DIR
 
 define('ENCRYPTION_SALT', '&*87ds8*&87&*&*&Sg8sg8ygsug%#54');
 
-require_once ROOT_PATH . 'Config/Loaders/autoloader.php';
+require_once ROOT_PATH . 'Config/autoloader.php';

@@ -1,22 +1,36 @@
-##<IfModule mod_rewrite.c>
-    ##<IfModule mod_negotiation.c>
-    ##    Options -Mutiviews -Indexes
-    ##<IfModule>
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -Multiviews -Indexes
+    </IfModule>
 
-  ##RewriteEngine On
+    RewriteEngine On
 
-  #Auth handler
-  ##RewriteCond %{HTTP:Authorization} .
-  ##RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    ## Remove .php extensions
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-  ##Redirect trailing slashes if not folder
-  ##RewriteCond %{REQUEST_FILENAME} !-d
-  ##RewriteCond %{REQUEST_URI} (.+)/$
-  ##RewriteRule ^ %1 [L,R=301]
+    ## Remove .html extensions
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-  ##Handle font controller
-  ##RewriteCond %{REQUEST_FILENAME} !-d
-  ##RewriteCond %{REQUEST_FILENAME} !-f
-  ##RewriteRule ^ index.php [L]
+    ## Redirect from .html extensions to non extensions
+    RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+    RewriteRule ^ /%1 [NC,L,R]
 
-##</IfModule>
+
+    #Auth handler
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    ##Redirect trailing slashes if not folder
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    ##Handle font controller
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule (.+) /ABSOLUTE/Frameworks/PivotFramework/SourceFiles/public/index.php [NC,L,QSA]
+
+
+</IfModule>

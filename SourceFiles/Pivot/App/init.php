@@ -8,11 +8,11 @@ include "bootstrap.php";
 //Manually Set timezone
 date_default_timezone_set('America/Toronto');
 
-
-require VIEW_PATH . 'home.php';
+//var_dump(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1));
+$uri = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1);
+//var_dump($uri);
 
 $router = new Router;
-$router->define([
-  '' => "Controller/index.php",
-  'about' => "Controller/about.php"
-]);
+require ROOT_PATH . 'Config/routes.php';
+
+require $router->show($uri);

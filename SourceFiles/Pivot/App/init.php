@@ -8,10 +8,11 @@ include "bootstrap.php";
 //Manually Set timezone
 date_default_timezone_set('America/Toronto');
 
-//$uri = trim($_SERVER['REQUEST_URI'], '/');
-//var_dump(trim($_SERVER['REQUEST_URI'], '/'));
+//var_dump(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1));
+$uri = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1);
+//var_dump($uri);
 
 $router = new Router;
 require ROOT_PATH . 'Config/routes.php';
 
-require $router->show('');
+require $router->show($uri);

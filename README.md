@@ -14,3 +14,4 @@ Will run right out of the box.
 
 ### Paradigm
 - OOP MVC(hybrid)
+- WebApp & CMS

@@ -9,7 +9,8 @@ Will run right out of the box.
 ### Tech Stack:
 - PHP
 - Vanilla JavaScript
-- HTML & CSS. <br>
+- HTML & CSS.
+- Web Server: Apache <br>
 
 ### Paradigm
 - OOP MVC(hybrid)

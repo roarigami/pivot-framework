@@ -7,7 +7,7 @@ class Request
 
 {
 
-  public function uri() {
+  public static function uri() {
       return substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1);
   }
 

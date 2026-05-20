@@ -1,6 +1,7 @@
 <?php
 use Root\Database\{Database};
 use Pivot\src\core\Router;
+use Pivot\src\core\Request;
 
 //Pivot System Initiation
 include "bootstrap.php";
@@ -9,7 +10,8 @@ include "bootstrap.php";
 date_default_timezone_set('America/Toronto');
 
 //var_dump(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1));
-$uri = substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], '/') + 1);
+$req = new Request;
+$uri = $req->uri();
 //var_dump($uri);
 
 $router = new Router;

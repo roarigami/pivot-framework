@@ -1,6 +1,7 @@
 <?php
 use Root\Database\{Database};
 use Pivot\src\core\Router;
+use Pivot\src\core\Request;
 
 //Pivot System Initiation
 include "bootstrap.php";

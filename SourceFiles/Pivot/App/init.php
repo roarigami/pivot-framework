@@ -17,7 +17,7 @@ date_default_timezone_set('America/Toronto');
 //$uri = Request::uri();
 //var_dump($uri);
 
-$router = new Router;
-require ROOT_PATH . 'Config/routes.php';
-
-require $router->show(Request::uri());
+// $router = new Router;
+// require ROOT_PATH . 'Config/routes.php';
+//
+// require $router->show(Request::uri());

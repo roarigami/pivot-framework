@@ -14,8 +14,8 @@ class ComposerStaticInit0f903ae7cf2ee651a50e271a7817ccb2
         'GenFrame\\Database\\Migrations\\PostsTable' => __DIR__ . '/../..' . '/SourceFiles/Root/Database/Migrations/PostsTable.php',
         'Pivot\\Database\\Migrations\\UsersTable' => __DIR__ . '/../..' . '/SourceFiles/Root/Database/Migrations/UsersTable.php',
         'Pivot\\src\\core\\Database' => __DIR__ . '/../..' . '/SourceFiles/Pivot/src/core/database.php',
+        'Pivot\\src\\core\\Request' => __DIR__ . '/../..' . '/SourceFiles/Pivot/src/core/request.php',
         'Pivot\\src\\core\\Router' => __DIR__ . '/../..' . '/SourceFiles/Pivot/src/core/router.php',
-        'Pivot\\src\\core\\Template' => __DIR__ . '/../..' . '/SourceFiles/Pivot/src/core/template.php',
         'Root\\Database\\Connection' => __DIR__ . '/../..' . '/SourceFiles/Root/Database/Connection.php',
         'Root\\Database\\Database' => __DIR__ . '/../..' . '/SourceFiles/Root/Database/Database.php',
     );

@@ -13,8 +13,8 @@ return array(
     'GenFrame\\Database\\Migrations\\PostsTable' => $baseDir . '/SourceFiles/Root/Database/Migrations/PostsTable.php',
     'Pivot\\Database\\Migrations\\UsersTable' => $baseDir . '/SourceFiles/Root/Database/Migrations/UsersTable.php',
     'Pivot\\src\\core\\Database' => $baseDir . '/SourceFiles/Pivot/src/core/database.php',
+    'Pivot\\src\\core\\Request' => $baseDir . '/SourceFiles/Pivot/src/core/request.php',
     'Pivot\\src\\core\\Router' => $baseDir . '/SourceFiles/Pivot/src/core/router.php',
-    'Pivot\\src\\core\\Template' => $baseDir . '/SourceFiles/Pivot/src/core/template.php',
     'Root\\Database\\Connection' => $baseDir . '/SourceFiles/Root/Database/Connection.php',
     'Root\\Database\\Database' => $baseDir . '/SourceFiles/Root/Database/Database.php',
 );
